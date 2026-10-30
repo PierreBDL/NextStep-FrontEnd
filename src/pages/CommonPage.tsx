@@ -4,6 +4,7 @@ import searchImg from '../assets/Search.png'
 import homeImg from '../assets/home.png'
 import candidatureImg from '../assets/candidature.png'
 import burgerImg from '../assets/burger.png'
+import avatarImg from '../assets/avatar.png'
 
 export default function CommonPage() {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(true)
@@ -62,9 +63,13 @@ export default function CommonPage() {
                     <div className="max-h-10 w-full p-2 flex flex-row gap-2 items-center">
                         <img className="w-auto h-8" src={searchImg} alt="" />
                         <form action="" className="w-full">
-                            <input className="focus:border w-full max-w-75 py-0.5 rounded-2xl placeholder:px-3" type="search" placeholder="Recherchez une entreprise" />
+                            <input className="focus:border w-full max-w-75 md:max-w-90 py-0.5 rounded-2xl border px-2 placeholder:text-sm" type="search" placeholder="Recherchez une entreprise" />
                         </form>
                     </div>
+
+                    <button onClick={() => alert("Mon compte")}>
+                        <img className="w-8 h-8 mr-10" src={avatarImg} alt="Mon compte" />
+                    </button>
                 </header>
 
                 <main className="p-4 md:p-6">
