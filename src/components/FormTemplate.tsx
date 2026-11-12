@@ -15,7 +15,7 @@ export default function FormTemplate ({title, fields}: FormTemplateProps) {
                     fields.map (field => (
                         <div>
                             <label htmlFor={field.id}>{field.label}</label>
-                            <input type="text" id={field.id} value={field.value} onChange={(e) => field.setter(e.target.value)}/>
+                            <input key={field.id} type={field.inputType} id={field.id} value={field.value} onChange={(e) => field.setter(e.target.value)} placeholder={field.placeholder ? field.placeholder : ""}/>
                         </div>
                     ))
                 }

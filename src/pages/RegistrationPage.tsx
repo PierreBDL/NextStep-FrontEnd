@@ -13,30 +13,40 @@ export default function RegistrationPage () {
         {
             label: "Prénom",
             id: "name",
+            placeholder: "Votre prénom...",
+            inputType: "text",
             value: name,
             setter: setName
         },
         {
             label: "Nom",
             id: "surname",
+            placeholder: "Votre nom...",
+            inputType: "text",
             value: surname,
             setter: setSurname
         },
         {
             label: "Courriel",
             id: "email",
+            placeholder: "exemple@exemple.com",
+            inputType: "email",
             value: email,
             setter: setEmail
         },
         {
             label: "Mot de passe",
             id: "password",
+            placeholder: "*******",
+            inputType: "password",
             value: password,
             setter: setPassword
         },
         {
             label: "Confirmez le mot de passe",
             id: "confirmPassword",
+            placeholder: "*******",
+            inputType: "password",
             value: confirmPassword,
             setter: setConfirmPassword
         }
