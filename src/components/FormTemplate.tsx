@@ -1,11 +1,13 @@
 import { type FormFieldTemplate } from '../interfaces/FormInt'
+import errorImg from '../assets/erreur.png'
 
 interface FormTemplateProps {
     title: string
     fields: FormFieldTemplate[]
+    error: string
 }
 
-export default function FormTemplate({ title, fields }: FormTemplateProps) {
+export default function FormTemplate({ title, fields, error }: FormTemplateProps) {
     return (
         <div className='min-h-screen px-4 py-10 bg-[#F5F4EF] flex w-full items-center justify-center'>
             <div className='w-full max-w-md p-6 sm:p-8 bg-white rounded-2xl border border-gray-200'>
@@ -33,6 +35,13 @@ export default function FormTemplate({ title, fields }: FormTemplateProps) {
                             </div>
                         ))
                     }
+
+                    {error !== "" ? (
+                        <div className='p-3.5 bg-red-100 border border-red-900 text-red-900 w-full rounded-xl flex flex-row gap-2 items-center'>
+                            <img className='w-7 h-7' src={errorImg} alt="" />
+                            <span>{error}</span>
+                        </div>
+                    ) : null}
 
                     <button className='bg-[#4F46E5] mt-2 hover:bg-[#6660e4] hover:cursor-pointer p-2.5 px-3 text-white rounded-lg'>
                         {title.toLowerCase() === "inscription" ? "S'inscrire" : "Se connecter"}

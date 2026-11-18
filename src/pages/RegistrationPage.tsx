@@ -3,6 +3,8 @@ import { type FormFieldTemplate } from '../interfaces/FormInt'
 import FormTemplate from '../components/FormTemplate'
 
 export default function RegistrationPage() {
+
+    // Input States
     const [name, setName] = useState<string>("")
     const [surname, setSurname] = useState<string>("")
     const [email, setEmail] = useState<string>("")
@@ -66,6 +68,12 @@ export default function RegistrationPage() {
         }
     ]
 
+
+
+
+    // Errors
+    const [error, setError] = useState<string>("Error test")
+
     return (
         <div className="flex flex-row max-w-screen w-full">
             <div className="bg-[#12131C] px-15 py-8 lg:w-[50vw] md:hidden lg:flex flex flex-col justify-between">
@@ -112,7 +120,7 @@ export default function RegistrationPage() {
 
                 </div>
             </div>
-            <FormTemplate title="inscription" fields={fields}></FormTemplate>
+            <FormTemplate title="inscription" fields={fields} error={error}></FormTemplate>
         </div>
     )
 }
