@@ -62,11 +62,10 @@ export default function CommonPage() {
                 <div>
                     <div className="flex flex-row items-center justify-center gap-1">
                         <div className="mb-10 flex justify-center items-center gap-2">
-                            <img className="w-12 h-12 shrink-0 object-contain" src="/Logo.png" alt="NextStep" />
+                            <img className="w-12 h-12 bg-white rounded-full shrink-0 object-contain" src="/Logo.png" alt="NextStep" />
                         </div>
-                        <div className="flex mb-10 flex-row gap-0 justify-center items-center font-bold text-2xl md:hidden lg:flex">
-                            <p className="text-[#004aad]">Next</p>
-                            <p className="text-[#ff5757]">Step</p>
+                        <div className="flex mb-10 flex-row gap-0 text-white justify-center items-center font-bold text-2xl">
+                            NextStep
                         </div>
                     </div>
 

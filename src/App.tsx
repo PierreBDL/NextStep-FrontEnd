@@ -3,14 +3,7 @@ import './App.css'
 import CommonPage from './pages/CommonPage'
 import RegistrationPage from './pages/RegistrationPage'
 import LoginPage from './pages/LoginPage'
-
-function Home() {
-  return (
-    <div>
-      <h1>Actuellement sur l'accueil</h1>
-    </div>
-  )
-}
+import HomePage from './pages/HomePage'
 
 function App() {
   return (
@@ -19,7 +12,7 @@ function App() {
         <Route path="/registration" element={<RegistrationPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route element={<CommonPage />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
         </Route>
       </Routes>
     </div>
