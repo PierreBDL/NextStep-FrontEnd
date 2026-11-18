@@ -1,5 +1,6 @@
 import { type FormFieldTemplate } from '../interfaces/FormInt'
 import errorImg from '../assets/erreur.png'
+import { useNavigate } from 'react-router-dom'
 
 interface FormTemplateProps {
     title: string
@@ -8,6 +9,10 @@ interface FormTemplateProps {
 }
 
 export default function FormTemplate({ title, fields, error }: FormTemplateProps) {
+
+    // Navigate
+    const navigate = useNavigate()
+
     return (
         <div className='min-h-screen px-4 py-10 bg-[#F5F4EF] flex w-full items-center justify-center'>
             <div className='w-full max-w-md p-6 sm:p-8 bg-white rounded-2xl border border-gray-200'>
@@ -53,7 +58,7 @@ export default function FormTemplate({ title, fields, error }: FormTemplateProps
                         <div className='w-full bg-gray-300 h-0.25'></div>
                     </div>
 
-                    <button className='bg-white hover:bg-slate-100 hover:cursor-pointer border border-gray-300 p-2.5 px-3 text-black rounded-lg'>
+                    <button onClick={() => {title.toLowerCase() === 'connexion' ? navigate('/registration') : navigate('/login')}} className='bg-white hover:bg-slate-100 hover:cursor-pointer border border-gray-300 p-2.5 px-3 text-black rounded-lg'>
                         {title.toLowerCase() === "inscription" ? "Se connecter" : "S'inscrire"}
                     </button>
                 </form>
