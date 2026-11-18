@@ -72,7 +72,7 @@ export default function RegistrationPage() {
 
 
     // Errors
-    const [error, setError] = useState<string>("Error test")
+    const [errorRegistration, setErrorRegistration] = useState<string>("")
 
     return (
         <div className="flex flex-row max-w-screen w-full">
@@ -120,7 +120,7 @@ export default function RegistrationPage() {
 
                 </div>
             </div>
-            <FormTemplate title="inscription" fields={fields} error={error}></FormTemplate>
+            <FormTemplate title="inscription" fields={fields} error={errorRegistration}></FormTemplate>
         </div>
     )
 }
