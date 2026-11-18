@@ -81,15 +81,15 @@ export default function RegistrationPage() {
                     <ul className="text-white flex flex-col gap-4 my-7">
                         <li className="flex flex-row">
                             <span className="text-[#D4F55A] cursor-pointer bg-[#474f28] w-6 h-6 p-1 flex justify-center items-center rounded-full font-bold mx-2">✓</span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Hello Work, Mon Alternance et France Travail réunis ensemble
                         </li>
                         <li className="flex flex-row">
                             <span className="text-[#D4F55A] cursor-pointer bg-[#474f28] w-6 h-6 p-1 flex justify-center items-center rounded-full font-bold mx-2">✓</span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tableau Kanban de suivi de vos candidatures
                         </li>
                         <li className="flex flex-row">
                             <span className="text-[#D4F55A] cursor-pointer bg-[#474f28] w-6 h-6 p-1 flex justify-center items-center rounded-full font-bold mx-2">✓</span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            IA et courriels pour vous accompagner.
                         </li>
                     </ul>
                 </div>
