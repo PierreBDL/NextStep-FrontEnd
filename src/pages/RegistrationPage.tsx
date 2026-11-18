@@ -37,7 +37,7 @@ export default function RegistrationPage () {
         {
             label: "Mot de passe",
             id: "password",
-            placeholder: "*******",
+            placeholder: "**********",
             inputType: "password",
             value: password,
             setter: setPassword
