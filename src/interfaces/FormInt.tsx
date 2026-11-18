@@ -1,8 +1,9 @@
-export interface FormFieldTemplate<T = string> {
+export interface FormFieldTemplate {
     label: string,
     id: string,
     inputType: string
     placeholder?: string
-    value: T,
-    setter: (v: T) => void 
+    value: any,
+    setter: (v: any) => void 
+    isRequire: boolean
 }

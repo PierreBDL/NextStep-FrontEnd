@@ -8,6 +8,7 @@ export default function RegistrationPage() {
     const [email, setEmail] = useState<string>("")
     const [password, setPassword] = useState<string>("")
     const [confirmPassword, setConfirmPassword] = useState<string>("")
+    const [cvFile, setCvFile] = useState<File | null>(null)
 
     const fields: FormFieldTemplate[] = [
         {
@@ -16,7 +17,8 @@ export default function RegistrationPage() {
             placeholder: "Votre prénom...",
             inputType: "text",
             value: name,
-            setter: setName
+            setter: setName,
+            isRequire: true
         },
         {
             label: "Nom",
@@ -24,7 +26,8 @@ export default function RegistrationPage() {
             placeholder: "Votre nom...",
             inputType: "text",
             value: surname,
-            setter: setSurname
+            setter: setSurname,
+            isRequire: true
         },
         {
             label: "Courriel",
@@ -32,7 +35,8 @@ export default function RegistrationPage() {
             placeholder: "exemple@exemple.com",
             inputType: "email",
             value: email,
-            setter: setEmail
+            setter: setEmail,
+            isRequire: true
         },
         {
             label: "Mot de passe",
@@ -40,7 +44,8 @@ export default function RegistrationPage() {
             placeholder: "**********",
             inputType: "password",
             value: password,
-            setter: setPassword
+            setter: setPassword,
+            isRequire: true
         },
         {
             label: "Confirmez le mot de passe",
@@ -48,7 +53,16 @@ export default function RegistrationPage() {
             placeholder: "*******",
             inputType: "password",
             value: confirmPassword,
-            setter: setConfirmPassword
+            setter: setConfirmPassword,
+            isRequire: true
+        },
+        {
+            label: "Votre CV",
+            id: "cv",
+            inputType: "file",
+            value: cvFile,
+            setter: setCvFile,
+            isRequire: false
         }
     ]
 

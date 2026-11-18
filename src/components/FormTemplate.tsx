@@ -16,7 +16,20 @@ export default function FormTemplate({ title, fields }: FormTemplateProps) {
                         fields.map(field => (
                             <div key={field.id} className='flex flex-col gap-2'>
                                 <label className='text-[16px] font-semibold text-black' htmlFor={field.id}>{field.label}</label>
-                                <input className='min-w-full border border-gray-300 bg-white rounded-xl text-sm py-3 px-4' type={field.inputType} id={field.id} value={field.value} onChange={(e) => field.setter(e.target.value)} placeholder={field.placeholder ? field.placeholder : ""} />
+                                <input className={`min-w-full border ${field.inputType === 'file' ? "hover:cursor-pointer hover:ring-1 hover:ring-[#4F46E5]" : null} border-gray-300 bg-white rounded-xl text-sm py-3 px-4`}
+                                    type={field.inputType}
+                                    id={field.id}
+                                    {...(field.inputType !== 'file' && { value: field.value })}
+                                    onChange={(e) => {
+                                        if (field.inputType === 'file') {
+                                            const files = (e.target as HTMLInputElement).files;
+                                            field.setter(files && files.length > 0 ? files[0] : null);
+                                        } else {
+                                            field.setter(e.target.value);
+                                        }
+                                    }}
+                                    placeholder={field.placeholder ? field.placeholder : ""}
+                                    required={field.isRequire} />
                             </div>
                         ))
                     }
