@@ -39,9 +39,9 @@ export default function HomePage () {
                 <p>NextStep centralise toutes vos candidatures afin de vous aider à trouver votre travail.</p>
 
                 <div className="flex flex-row justify-around h-64 w-full md:flex-col md:items-center md:gap-6">
-                    <div className="border border-gray-300 bg-white rounded-xl p-3 px-6 flex flex-col justify-center gap-2.5 w-[20vw] md:w-[50vw] md:py-6">
-                        <img src={loupeImg} className="w-16 h-16 mb-5 flex self-start" alt="" />
-                        <h2 className="font-bold text-xl">
+                    <div className="border border-gray-300 bg-white rounded-xl p-3 px-6 flex flex-col justify-center gap-2.5 w-[30vw] md:w-[50vw] md:py-6">
+                        <img src={loupeImg} className="w-16 h-16 mb-5 flex self-start sm:self-center sm:mb-2" alt="" />
+                        <h2 className="font-bold text-xl sm:text-lg sm:font-semibold">
                             Centralise tes offres
                         </h2>
                         <p>
@@ -49,9 +49,9 @@ export default function HomePage () {
                         </p>
                     </div>
 
-                    <div className="border border-gray-300 bg-white rounded-xl p-3 px-6 flex flex-col justify-center gap-2.5 w-[20vw] md:w-[50vw] md:py-6">
-                        <img src={kanbanImg} className="w-16 h-16 mb-5 flex self-start" alt="" />
-                        <h2 className="font-bold text-xl">
+                    <div className="border border-gray-300 bg-white rounded-xl p-3 px-6 flex flex-col justify-center gap-2.5 w-[30vw] md:w-[50vw] md:py-6">
+                        <img src={kanbanImg} className="w-16 h-16 mb-5 flex self-start sm:self-center sm:mb-2" alt="" />
+                        <h2 className="font-bold text-xl sm:text-lg sm:font-semibold">
                             Suivi Kanban
                         </h2>
                         <p>
@@ -59,9 +59,9 @@ export default function HomePage () {
                         </p>
                     </div>
 
-                    <div className="border border-gray-300 bg-white rounded-xl p-3 px-6 flex flex-col justify-center gap-2.5 w-[20vw] md:w-[50vw] md:py-6">
-                        <img src={iaImg} className="w-16 h-16 mb-5 flex self-start" alt="" />
-                        <h2 className="font-bold text-xl">
+                    <div className="border border-gray-300 bg-white rounded-xl p-3 px-6 flex flex-col justify-center gap-2.5 w-[30vw] md:w-[50vw] md:py-6">
+                        <img src={iaImg} className="w-16 h-16 mb-5 flex self-start sm:self-center sm:mb-2" alt="" />
+                        <h2 className="font-bold text-xl sm:text-lg sm:font-semibold">
                             IA
                         </h2>
                         <p>
