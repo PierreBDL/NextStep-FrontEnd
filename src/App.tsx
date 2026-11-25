@@ -4,6 +4,7 @@ import CommonPage from './pages/CommonPage'
 import RegistrationPage from './pages/RegistrationPage'
 import LoginPage from './pages/LoginPage'
 import HomePage from './pages/HomePage'
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -12,9 +13,12 @@ function App() {
         <Route path="/registration" element={<RegistrationPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/" element={<HomePage />} />
-        <Route element={<CommonPage />}>
-          
+
+        <Route element={<CommonPage />} >
+        
         </Route>
+
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
   )
