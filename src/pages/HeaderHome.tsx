@@ -7,7 +7,7 @@ export default function HeaderHome() {
         <header className="flex flex-row justify-between p-4 px-5">
             <div className="flex flex-row items-center justify-start gap-1">
                 <div className="flex justify-center items-center gap-2">
-                    <img className="w-12 h-12 shrink-0 object-contain" src="/Logo.png" alt="NextStep" />
+                    <img className="w-15 h-15 shrink-0 object-contain" src="/Logo.png" alt="NextStep" />
                 </div>
                 <div className="flex flex-row gap-0 text-[#4F46E5] justify-center items-center font-bold text-2xl">
                     NextStep

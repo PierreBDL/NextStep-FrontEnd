@@ -81,7 +81,7 @@ export default function RegistrationPage() {
                     <div className="mb-10 flex justify-center items-center gap-2">
                         <img className="w-12 h-12 bg-white rounded-full shrink-0 object-contain" src="/Logo.png" alt="NextStep" />
                     </div>
-                    <div className="flex mb-10 flex-row gap-0 text-white justify-center items-center font-bold text-2xl">
+                    <div className="flex mb-10 flex-row gap-0 text-[#ffcb57] justify-center items-center font-bold text-2xl">
                         NextStep
                     </div>
                 </div>
@@ -92,7 +92,7 @@ export default function RegistrationPage() {
                         <br />
                         candidatures.
                         <br />
-                        <div className="text-[#D4F55A] text-4xl">
+                        <div className="text-[#ffcb57] text-4xl">
                             Un longueur d'avance.
                         </div>
                     </div>
@@ -102,15 +102,15 @@ export default function RegistrationPage() {
 
                     <ul className="text-white flex flex-col gap-4 my-7">
                         <li className="flex flex-row">
-                            <span className="text-[#D4F55A] cursor-pointer bg-[#474f28] w-6 h-6 p-1 flex justify-center items-center rounded-full font-bold mx-2">✓</span>
+                            <span className="text-[#ffcb57] cursor-pointer bg-[#8d7541] w-6 h-6 p-1 flex justify-center items-center rounded-full font-bold mx-2">✓</span>
                             Hello Work, Mon Alternance et France Travail réunis ensemble
                         </li>
                         <li className="flex flex-row">
-                            <span className="text-[#D4F55A] cursor-pointer bg-[#474f28] w-6 h-6 p-1 flex justify-center items-center rounded-full font-bold mx-2">✓</span>
+                            <span className="text-[#ffcb57] cursor-pointer bg-[#8d7541] w-6 h-6 p-1 flex justify-center items-center rounded-full font-bold mx-2">✓</span>
                             Tableau Kanban de suivi de vos candidatures
                         </li>
                         <li className="flex flex-row">
-                            <span className="text-[#D4F55A] cursor-pointer bg-[#474f28] w-6 h-6 p-1 flex justify-center items-center rounded-full font-bold mx-2">✓</span>
+                            <span className="text-[#ffcb57] cursor-pointer bg-[#8d7541] w-6 h-6 p-1 flex justify-center items-center rounded-full font-bold mx-2">✓</span>
                             IA et courriels pour vous accompagner.
                         </li>
                     </ul>
