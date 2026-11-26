@@ -1,18 +1,18 @@
-import { useNavigate } from "react-router-dom"  
+import { useNavigate } from "react-router-dom"
 
 export default function HeaderHome() {
     const navigate = useNavigate()
 
     return (
         <header className="flex flex-row justify-between p-4 px-5">
-            <div className="flex flex-row items-center justify-start gap-1">
+            <button className="flex flex-row items-center justify-start gap-1 hover:cursor-pointer" onClick={() => navigate("/")}>
                 <div className="flex justify-center items-center gap-2">
                     <img className="w-15 h-15 shrink-0 object-contain" src="/Logo.png" alt="NextStep" />
                 </div>
                 <div className="flex flex-row gap-0 text-[#d5a94a] justify-center items-center font-bold text-2xl">
                     NextStep
                 </div>
-            </div>
+            </button>
 
             <div className="flex flex-row gap-2 items-center justify-center">
                 <button
