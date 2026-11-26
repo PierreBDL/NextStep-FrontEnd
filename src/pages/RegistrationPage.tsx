@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { type FormFieldTemplate } from '../interfaces/FormInt'
 import FormTemplate from '../components/FormTemplate'
 
@@ -68,23 +69,24 @@ export default function RegistrationPage() {
         }
     ]
 
-
-
-
     // Errors
     const [errorRegistration, setErrorRegistration] = useState<string>("")
+
+
+    // Navigate
+    const navigate = useNavigate()
 
     return (
         <div className="flex flex-row max-w-screen w-full">
             <div className="bg-[#12131C] px-15 py-8 lg:w-[50vw] md:hidden lg:flex flex flex-col justify-between">
-                <div className="flex flex-row items-center justify-start gap-1">
+                <button className="flex flex-row items-center justify-start gap-1 hover:cursor-pointer" onClick={() => navigate("/")}>
                     <div className="mb-10 flex justify-center items-center gap-2">
                         <img className="w-12 h-12 bg-white rounded-full shrink-0 object-contain" src="/Logo.png" alt="NextStep" />
                     </div>
                     <div className="flex mb-10 flex-row gap-0 text-[#ffcb57] justify-center items-center font-bold text-2xl">
                         NextStep
                     </div>
-                </div>
+                </button>
 
                 <div>
                     <div className="text-white text-5xl font-bold flex flex-col gap-1">
