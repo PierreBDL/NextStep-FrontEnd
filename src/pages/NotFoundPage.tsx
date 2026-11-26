@@ -15,7 +15,7 @@ export default function NotFoundPage() {
                     <div className="flex flex-col gap-2 justify-center items-center">
                         <h1 className="text-3xl font-bold text-red-600">404 - Page introuvable</h1>
                         <button
-                            className="text-white bg-[#4F46E5] h-10 hover:bg-[#6660e4] hover:cursor-pointer border border-gray-300 p-1 px-3 flex justify-center items-center rounded-lg font-semibold"
+                            className="text-black hover:text-white h-10 bg-[#ffcb57] hover:bg-[#d5a94a] hover:cursor-pointer border border-gray-300 p-1 px-3 flex justify-center items-center rounded-lg font-semibold"
                             onClick={() => navigate("/")}>
                             Retour à l'accueil
                         </button>
