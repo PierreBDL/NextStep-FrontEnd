@@ -48,7 +48,7 @@ export default function FormTemplate({ title, fields, error }: FormTemplateProps
                         </div>
                     ) : null}
 
-                    <button className='bg-[#4F46E5] mt-2 hover:bg-[#6660e4] hover:cursor-pointer p-2.5 px-3 text-white rounded-lg'>
+                    <button className='bg-[#ffcb57] mt-2 hover:bg-[#d5a94a] hover:cursor-pointer p-2.5 px-3 text-black hover:text-white rounded-lg'>
                         {title.toLowerCase() === "inscription" ? "S'inscrire" : "Se connecter"}
                     </button>
 

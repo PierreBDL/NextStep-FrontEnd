@@ -62,7 +62,7 @@ export default function CommonPage() {
                 <div>
                     <div className="flex flex-row items-center justify-center gap-1">
                         <div className="mb-10 flex justify-center items-center gap-2">
-                            <img className="w-12 h-12 bg-white rounded-full shrink-0 object-contain" src="/Logo.png" alt="NextStep" />
+                            <img className="w-15 h-15 bg-white rounded-full shrink-0 object-contain" src="/Logo.png" alt="NextStep" />
                         </div>
                         <div className="flex mb-10 flex-row gap-0 text-white justify-center items-center font-bold text-2xl">
                             NextStep
